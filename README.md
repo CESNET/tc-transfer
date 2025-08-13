@@ -35,4 +35,4 @@ To summarize, this project:
 
 #### Results
 
-The results of experiments are saved in `$temp_dir/results`. The final results presented in the manuscript are available in `scripts/final-results`. See `scripts/explore_results.ipynb` for a summarization of the results in tables. The best found hyperparameteres for each dataset can be found in `conf\best`.
+The results of experiments are saved in `$temp_dir/results`. The final results presented in the manuscript are available in `scripts/final-results`. See [`scripts/explore_results.ipynb`](https://github.com/CESNET/tc-transfer/blob/main/scripts/explore_results.ipynb) for a summarization of the results in tables. The best found hyperparameteres for each dataset can be found in `conf\best`.
