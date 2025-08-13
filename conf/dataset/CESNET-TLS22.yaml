@@ -1,0 +1,9 @@
+defaults:
+  - base_dataset
+
+name: CESNET-TLS22
+loader: CESNET_DATAZOO
+dataset_path: ${dataset_base_dir}/CESNET-TLS22/
+train_size: 1000000
+val_size: 100000
+test_size: 1000000

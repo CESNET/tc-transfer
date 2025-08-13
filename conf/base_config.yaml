@@ -1,0 +1,17 @@
+defaults:
+  - base_config_class
+  - local-vars
+  - dataset: base_dataset
+  - _self_
+
+hydra:
+  run:
+    dir: ${temp_dir}/outputs/${now:%Y-%m-%d_%H-%M-%S-%f}/
+  sweep:
+    dir: ${temp_dir}/multirun/${now:%Y-%m-%d_%H-%M-%S-%f}/
+    subdir: ${hydra.job.num}
+
+splits: [0]
+print_configuration: false
+wandb: 
+  tags: []

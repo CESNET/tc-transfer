@@ -1,0 +1,8 @@
+defaults:
+  - base_dataset
+
+name: ISCXVPN2016-TrafficType
+loader: ISCXVPN2016
+dataset_path: ${dataset_base_dir}/ISCXVPN2016.parquet
+label_column: BF_label_class
+random_split_val_test_fraction: 0.2

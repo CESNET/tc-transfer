@@ -1,0 +1,6 @@
+defaults:
+  - base_dataset
+
+name: UCDAVIS19-Script
+loader: TCBENCH
+random_split_val_test_fraction: 0.2

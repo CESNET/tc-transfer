@@ -1,0 +1,11 @@
+defaults:
+  - base_config
+  - best: ISCXVPN2016-App
+  - override dataset: ISCXVPN2016-App
+  - _self_
+
+wandb:
+  tags: [notebook]
+  project: cesnet/tc-transfer-debug
+
+splits: [0, 1, 2, 3, 4]

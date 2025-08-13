@@ -1,0 +1,57 @@
+defaults:
+  - base_config
+  - best: ISCXVPN2016-App
+  - override dataset: ISCXVPN2016-App
+  - _self_
+
+# For tcbench datasets use each prepared splits twice
+# splits: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4]
+# For other datasets use ten different splits
+splits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Common parameters for training from scratch
+transfer_method: FROM_SCRATCH
+embedder_finetuning: STANDARD
+layerwise_lr_mult: 1
+embedder_batchnorm_eval_mode: false
+embedder_dropout_eval_mode: false
+feature_space_reg_alpha: 0
+start_point_reg_alpha: 0
+embedder_replace_unseen_packets_threshold: 0
+
+# Best per-dataset parameters for training from scratch
+# MIRAGE19
+# lr: -2.75
+# weight_decay: -5
+
+# # MIRAGE22
+# lr: -2.75
+# weight_decay: -6
+
+# UTMOBILENET21
+# lr: -3
+# weight_decay: -6
+
+# UCDAVIS19
+# lr: -3.5
+# weight_decay: -3.5
+
+# ISCXVPN2016-App
+lr: -3.25
+weight_decay: -6
+
+# ISCXVPN2016-TrafficType
+# lr: -3.25
+# weight_decay: -5
+
+# ISCXVPN2016-Encapsulation
+# lr: -3.75
+# weight_decay: -4.5
+
+# CESNET-TLS22
+# lr: -1.5
+# weight_decay: -5
+
+# AppClassNet
+# lr: -1.25
+# weight_decay: -2.25

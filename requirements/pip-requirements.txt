@@ -1,0 +1,7 @@
+cesnet-datazoo
+cesnet-models
+hydra-core
+tcbench
+aim==3.29.1 # Needed for tcbench
+tqdm
+wandb

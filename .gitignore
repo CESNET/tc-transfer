@@ -1,0 +1,7 @@
+__pycache__/
+venv/
+temp/
+sweeps/
+wandb/
+.vscode/settings.json
+pyrightconfig.json

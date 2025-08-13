@@ -1,0 +1,11 @@
+defaults:
+  - base_config
+  - _self_
+
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      dataset: ISCXVPN2016-App, ISCXVPN2016-TrafficType, ISCXVPN2016-Encapsulation, MIRAGE19, MIRAGE22, UTMOBILENET21, UCDAVIS19-Script, UCDAVIS19-Human, CESNET-TLS22, AppClassNet
+
+transfer_method: KNN

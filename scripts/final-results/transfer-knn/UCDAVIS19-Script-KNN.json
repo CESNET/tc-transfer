@@ -1,0 +1,30 @@
+{
+    "splits": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+    ],
+    "test_metrics": {
+        "top1_acc": 1.0,
+        "top1_recall": 1.0,
+        "top1_f1": 1.0,
+        "maj_acc": 1.0,
+        "maj_recall": 1.0,
+        "maj_f1": 1.0
+    },
+    "test_metrics_std": {
+        "top1_acc": 0.0,
+        "top1_recall": 0.0,
+        "top1_f1": 0.0,
+        "maj_acc": 0.0,
+        "maj_recall": 0.0,
+        "maj_f1": 0.0
+    }
+}

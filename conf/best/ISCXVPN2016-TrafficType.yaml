@@ -1,0 +1,24 @@
+# @package _global_
+
+transfer_method: FINETUNE
+embedder_finetuning: LAYERWISE_LR
+embedder_features: CNN_BACKBONE_PLUS_MAX_POOLING
+
+head: LINEAR
+head_dropout: 0.45
+head_normalize: true
+
+batch_size: 256
+num_epochs: 50
+warmup_epochs: 2
+early_stopping_patience: -1
+
+lr: -2.375
+layerwise_lr_mult: 0.65
+weight_decay: 0
+feature_space_reg_alpha: 50
+start_point_reg_alpha: 0
+
+embedder_batchnorm_eval_mode: true
+embedder_dropout_eval_mode: false
+embedder_replace_unseen_packets_threshold: 1000

@@ -1,0 +1,11 @@
+defaults:
+  - base_config
+  - override dataset: ISCXVPN2016-App
+  - _self_
+
+wandb:
+  project: cesnet/tc-transfer-c
+  tags: [metacentrum]
+
+temp_dir: ???
+dataset_base_dir: ~/synced/projects/tc-transfer/datasets
