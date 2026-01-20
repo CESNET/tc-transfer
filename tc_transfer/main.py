@@ -67,8 +67,6 @@ def evaluate_dataset(config: Config, device: torch.device) -> tuple[dict[str, fl
             # Evaluate kNN on fixed pretrained embeddings
             #
             if config.transfer_method == TransferMethod.KNN:
-                if config.embedder_features != EmbedderFeatures.ORIGINAL:
-                    print("KNN transfer method is intended to be used with the original features of 30pktTCNET_256")
                 if not silent: print("\tUsing the pretrained 30pktTCNET_256 model to compute embeddings")
                 train_embeddings = compute_embeddings(embedding_model, dataset=train_dataset, device=device, return_tensors=False)
                 test_embeddings = compute_embeddings(embedding_model, dataset=test_dataset, device=device, return_tensors=False)
