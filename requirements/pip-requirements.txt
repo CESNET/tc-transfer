@@ -1,7 +1,8 @@
+aim==3.29.1 # This version needs to be fixed for tcbench
+# torch==2.7.1 # Fixing torch version can also help
 cesnet-datazoo
 cesnet-models
 hydra-core
 tcbench
-aim==3.29.1 # Needed for tcbench
 tqdm
 wandb

@@ -1,11 +1,10 @@
 defaults:
   - base_config
-  - best: ISCXVPN2016-App
-  - override dataset: ISCXVPN2016-App
+  - best: CESNET-TLS22
+  - override dataset: CESNET-TLS22
   - _self_
 
-wandb:
-  tags: [notebook]
-  project: cesnet/tc-transfer-debug
+splits: [0]
 
-splits: [0, 1, 2, 3, 4]
+transfer_method: KNN
+embedder_features: CNN_BACKBONE_PLUS_GEM_POOLING

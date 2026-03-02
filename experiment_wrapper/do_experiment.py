@@ -15,6 +15,7 @@ cs = ConfigStore.instance()
 cs.store(name="base_config_class", node=Config)
 cs.store(group="dataset", name="base_dataset", node=DatasetConfig)
 
+
 def flatten_one_level(d):
     result = {}
     for k, v in d.items():
@@ -24,7 +25,6 @@ def flatten_one_level(d):
         else:
             result[k] = v
     return result
-
 
 @hydra.main(version_base=None, config_path="../conf", config_name="config")
 def do_experiment(config: Config):

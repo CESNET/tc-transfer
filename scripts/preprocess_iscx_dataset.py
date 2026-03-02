@@ -14,7 +14,7 @@ dataset = pd.concat(dfs).reset_index()
 (dataset["iat"].map(len) == dataset.packet_dir.map(len)).all()
 (dataset["iat"].map(len) == dataset["L4_payload_bytes"].map(len)).all()
 
-dataset = dataset[dataset.packet_dir.map(len) > 0] # filter flows with empty PPI
+dataset = dataset[dataset.packet_dir.map(len) > 0] # Filter flows with empty packet sequences
 dataset_columns = ["packet_dir", "L4_payload_bytes", "iat", "BF_label_app", "BF_label_class", "BF_label_vpn"]
 dataset = dataset[dataset_columns]
 dataset.to_parquet("ISCXVPN2016.parquet")

@@ -89,4 +89,4 @@ class Config:
     embedder_batchnorm_eval_mode: bool = True
     embedder_dropout_eval_mode: bool = False
     embedder_replace_unseen_packets_threshold: int = 1
-    cross_dataset_transfer: Optional[str] = None # when using other datasets for pretraining, provide path to model weights
+    cross_dataset_transfer: Optional[str] = None # When using not-default dataset as the pretraining base, provide path to model weights
